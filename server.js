@@ -6,7 +6,9 @@ const connectDB = require('./config/db')
 
 dotenv.config({ path: './config/config.env'})
 
+var cors = require('cors')
 
+app.use(cors())
 
 connectDB()
 
